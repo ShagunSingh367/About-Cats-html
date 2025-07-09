@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="https://icatcare.org/articles/introducing-cats">Home</a>
+        <a href="https://www.purina.com/cats/cat-breeds">Breeds</a>
+        <a href="https://www.four-paws.org/our-stories/publications-guides/does-a-cat-fit-my-lifestyle?utm_source=google&utm_medium=paid&utm_campaign=21459560054&utm_content=166669497002&utm_term=how%20to%20take%20care%20of%20a%20cat&gadid=706477183855&gad_source=1&gad_campaignid=21459560054&gbraid=0AAAAAC0faW5zJfxPy1uURfpJqfeRtxrV-&gclid=CjwKCAjwprjDBhBTEiwA1m1d0nIpR9dR8VmuWjsrsCNEuUEuJKdKuy4AoL0JE2IrnykaRRSRICnCBxoCB3YQAvD_BwE">Care Tips</a>
+        <a href="https://www.pexels.com/search/cat/">Gallery</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="POOKIE">
+        <center>
+            <h1>Welcome to CatWorld – Everything You Need to Know About Cats <i class="fas fa-paw"></i> <i class="fas fa-cat"></i></h1>
+            <p class="caty"><i class="fas fa-cat"></i> You are an amazing cat, a handsome cat who got no fears. <i class="fas fa-heart"></i></p>
+            <img class="cat-image" src="./cat.png" alt="Cute Cat Image">
+        </center>
+
+        <ul>
+            <li>Cats are small, furry mammals known for their grace, independence, and playful personalities. <i class="fas fa-paw"></i></li>
+            <li>With their sharp senses, quick reflexes, and silent movements, cats are natural hunters. <i class="fas fa-cat"></i></li>
+            <li>Cats come in a variety of breeds, colors, and fur lengths. <i class="fas fa-heart"></i></li>
+            <li>Cats communicate through meows, purrs, and body language. <i class="fas fa-paw"></i></li>
+            <li>They are low-maintenance and love cozy spots. <i class="fas fa-cat"></i></li>
+            <li>They bring calmness and joy to any home. <i class="fas fa-heart"></i></li>
+        </ul>
+    </div>
+        <a href="https://en.wikipedia.org/wiki/Cat">More about cats <i class="fas fa-cat"></i></a></br>
+         <a href="./contact.html">Contact</a>
+        <!-- GALLERY SECTION -->
+        <h2>Cat Gallery 🐱</h2>
+        <div class="gallery">
+            <img src="./download (1).jpg" alt="Cat 1">
+            <img src="./download.jpg" alt="Cat 2">
+            <img src="./second.jpg" alt="Cat 3">
+        </div>
+
+        <!-- VIDEO SECTION -->
+        <h2>Watch This Cute Cat! 🎬</h2>
+        <!-- VIDEO SECTION -->
+<iframe width="400" height="225" src="https://www.youtube.com/embed/oPWqqp8n-Qw" frameborder="0" allowfullscreen></iframe>
+
+        <!-- CAT FACT GENERATOR -->
+        <h2>Click for a Fun Cat Fact! 😺</h2>
+        <button onclick="showFact()">Show a Cat Fact 🐾</button>
+        <p id="fact"></p>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const facts = [
+            "Cats sleep 12–16 hours a day!",
+            "A group of cats is called a clowder.",
+            "Cats can rotate their ears 180 degrees.",
+            "House cats share 95.6% of their DNA with tigers."
+        ];
+        function showFact() {
+            const random = Math.floor(Math.random() * facts.length);
+            document.getElementById("fact").textContent = facts[random];
+        }
+    </script>
+
+</body>
+</html>
